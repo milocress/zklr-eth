@@ -479,7 +479,21 @@ function App(props) {
             */}
 
             <Contract
-              name="YourContract"
+              name="MultiEntryComp"
+              signer={userSigner}
+              provider={localProvider}
+              address={address}
+              blockExplorer={blockExplorer}
+            />
+            <Contract
+              name="SingleEntryComp"
+              signer={userSigner}
+              provider={localProvider}
+              address={address}
+              blockExplorer={blockExplorer}
+            />
+            <Contract
+              name="SecretCommitReveal"
               signer={userSigner}
               provider={localProvider}
               address={address}
